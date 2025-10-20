@@ -7,40 +7,51 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      padding: 40px;
-      background-color: #f8f9fa;
+      background-color: #e9ecef;
       margin: 0;
+      padding: 40px 0;
     }
 
     h1, h2, p {
       text-align: center;
+      margin: 0 0 20px;
     }
 
     .iframe-container {
-      display: fit;
+      display: flex;
       justify-content: center;
-      align-items: center;
-      width: 100%;
-      margin-top: 30px;
+      margin-top: 40px;
     }
 
     iframe {
-      display: block;
       width: 80%;
-      max-width: 1000px;
+      max-width: 900px;
       height: 900px;
       border: none;
+      background: white;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      border-radius: 8px;
+    }
+
+    /* Simulate page gaps */
+    iframe::after {
+      content: "";
+      display: block;
+      height: 40px;
+      background: #e9ecef;
     }
   </style>
 </head>
 <body>
   <h1>🛡️ Cybersecurity Project Showcase</h1>
-  <p>This site showcases the projects I have completed during my studies at the Centre for Cybersecurity (CFC).</p>
+  <p>This site showcases the projects I completed during my studies at the Centre for Cybersecurity (CFC).</p>
 
   <h2>📂 Linux Fundamentals Project</h2>
 
   <div class="iframe-container">
-    <iframe src="https://docs.google.com/document/d/e/2PACX-1vTR2DE5h6m8sTde1KhdBoHc-hnShGEiOTMskD6AThUo79QrQ2KklyrzcnIrj5pUOw/pub?embedded=true"></iframe>
+    <iframe 
+      src="https://docs.google.com/document/d/e/2PACX-1vTR2DE5h6m8sTde1KhdBoHc-hnShGEiOTMskD6AThUo79QrQ2KklyrzcnIrj5pUOw/pub?embedded=true">
+    </iframe>
   </div>
 </body>
 </html>
