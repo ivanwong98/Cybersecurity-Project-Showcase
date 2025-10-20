@@ -18,15 +18,16 @@
 
     .iframe-container {
       width: 100%;
+      margin-top: 30px;
       display: flex;
       justify-content: center; /* centers the iframe horizontally */
-      margin-top: 30px;
     }
 
     iframe {
-      width: 80%;   /* adjust width as needed */
-      max-width: 1000px; /* optional: don’t get too wide on large screens */
-      height: 900px; /* adjust height */
+      display: block;          /* ensures flexbox can center it */
+      width: 80%;              /* adjust width as needed */
+      max-width: 1000px;       /* optional max width */
+      height: 900px;           /* adjust height */
       border: none;
     }
   </style>
@@ -39,4 +40,8 @@
 
   <div class="iframe-container">
     <iframe 
-      src="https://docs.google.com/document/d/e/2PACX-1vRHVMu
+      src="https://docs.google.com/document/d/e/2PACX-1vRHVMueLJCw6sm_r9s0kjlzSgmxtloAZw199Ep_mwfr1FXa7TS4glVwfqFUAzFoOQ/pub?embedded=true">
+    </iframe>
+  </div>
+</body>
+</html>
