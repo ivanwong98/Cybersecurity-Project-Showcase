@@ -9,16 +9,24 @@
       font-family: Arial, sans-serif;
       padding: 40px;
       background-color: #f8f9fa;
-      text-align: center; /* Center headings and text */
+      margin: 0;
     }
+
+    h1, h2, p {
+      text-align: center;
+    }
+
     .iframe-container {
+      width: 100%;
       display: flex;
-      justify-content: center; /* center horizontally */
+      justify-content: center; /* centers the iframe horizontally */
       margin-top: 30px;
     }
+
     iframe {
-      width: 80%;      /* adjust width of embedded doc */
-      height: 900px;   /* adjust height */
+      width: 80%;   /* adjust width as needed */
+      max-width: 1000px; /* optional: don’t get too wide on large screens */
+      height: 900px; /* adjust height */
       border: none;
     }
   </style>
@@ -31,8 +39,4 @@
 
   <div class="iframe-container">
     <iframe 
-      src="https://docs.google.com/document/d/e/2PACX-1vRHVMueLJCw6sm_r9s0kjlzSgmxtloAZw199Ep_mwfr1FXa7TS4glVwfqFUAzFoOQ/pub?embedded=true">
-    </iframe>
-  </div>
-</body>
-</html>
+      src="https://docs.google.com/document/d/e/2PACX-1vRHVMu
